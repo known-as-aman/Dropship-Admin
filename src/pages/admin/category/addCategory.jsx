@@ -52,7 +52,7 @@ const AddCategory = () => {
         authorization: `Bearer ${token}`,
       };
       const body = {
-        file: file,
+        files: file,
       };
       let uploadStatus = await postFormDataCall("/uploads", headers, body);
 
